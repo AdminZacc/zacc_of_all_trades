@@ -54,37 +54,50 @@ section {
 .section {
   transform: translate(-100%) scale(0);
   transition: all 0.4s ease-in-out;
-  background-color: var(red);
+  background-color: var(rgb(199, 85, 85));
 }
 
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(blue);
+  background-color: var(rgb(79, 79, 196));
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(magenta);
+  background-color: var(slateblue);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(aqua);
+  background-color: var(rgb(44, 114, 114));
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(beige);
+  background-color: var(rgb(241, 241, 167));
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
   background-color: var(--color-secondary);
+}
+
+.active {
+  display: block;
+  animation: scaleAnim 1s ease-in-out;
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scale(0);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
 
 .controls {
