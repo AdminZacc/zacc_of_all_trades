@@ -3,6 +3,7 @@ const sectBtns = document.querySelectorAll(".controls");
 const sectBtn = document.querySelectorAll(".control");
 const allSections = document.querySelectorAll(".main-content");
 const element = document.querySelectorAll(".element");
+
 function PageTransitions() {
   // Button click active class
   for (let i = 0; i < sectBtn.length; i++) {
@@ -22,24 +23,25 @@ function PageTransitions() {
   }
 
   // Sections active class
-  for (let i = 0; i < allSections.length; i++) {
-    allSections[i].addEventListener("click", (e) => {
+  for (let i = 0; i < sectBtns.length; i++) {
+    sectBtns[i].addEventListener("click", (e) => {
       const id = e.target.dataset.id;
 
       if (id) {
-        // remove selected from other buttons
+        // Remove selected from other buttons
         sectBtns.forEach((btn) => {
           btn.classList.remove("active");
         });
 
         e.target.classList.add("active");
 
-        // hide other sections
+        // Hide other sections
         sections.forEach((section) => {
           section.classList.remove("active");
         });
 
         const element = document.getElementById(id);
+
         // Check if the element with the given ID exists
         if (element) {
           element.classList.add("active");
