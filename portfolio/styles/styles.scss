@@ -52,49 +52,52 @@ section {
 }
 
 .section {
-  transform: translate(-100%) scale(0);
+  transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
-  background-color: var(rgb(199, 85, 85));
+  background-color: var(--color-primary);
 }
+
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(rgb(79, 79, 196));
+  background-color: rgb(216, 84, 28);
 }
+
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(slateblue);
+  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(rgb(44, 114, 114));
+  background-color: rgb(117, 205, 90);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(rgb(241, 241, 167));
+  background-color: rgb(13, 163, 190);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(--color-secondary);
+  background-color: rgb(191, 191, 18);
 }
 
 .active {
   display: block;
   animation: scaleAnim 1s ease-in-out;
-  @keyframes scaleAnim {
-    0% {
-      transform: translateY(-100%) scale(0);
-    }
-    100% {
-      transform: translateY(0) scale(1);
-    }
+}
+
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scale(0);
+  }
+  100% {
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -102,7 +105,7 @@ section {
 
 .controls {
   position: fixed;
-  z-index: 10px;
+  z-index: 10;
   top: 50%;
   right: 3%;
   display: flex;
@@ -110,14 +113,6 @@ section {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-}
-  .active-btn {
-    background-color: var(--color-secondary) !important;
-    transition: all 0.4s ease-in-out;
-    i {
-      color: var(--color-white) !important;
-    }
-  }
   .control {
     padding: 1rem;
     cursor: pointer;
@@ -125,6 +120,9 @@ section {
     width: 55px;
     height: 55px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0.7rem 0;
     box-shadow: var(--box-shadow-1);
     i {
@@ -133,3 +131,11 @@ section {
       pointer-events: none;
     }
   }
+}
+.active-btn {
+  background-color: var(--color-secondary) !important;
+  transition: all 0.4s ease-in-out;
+  i {
+    color: var(--color-white) !important;
+  }
+}
