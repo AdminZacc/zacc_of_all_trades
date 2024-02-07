@@ -19,7 +19,7 @@
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
-  --transition-1: var(--transition-1);
+  all 0.4s ease-in-out: var(all 0.4s ease-in-out);
 }
 
 /*.light-mode {
@@ -41,7 +41,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
-  transition: var(--transition-1);
+  transition: var(all 0.4s ease-in-out);
 }
 
 a {
@@ -70,7 +70,7 @@ section {
 .container {
   display: none;
   transform: translateY(-100%) scale(0);
-  transition: var(--transition-1)
+  transition: var(all 0.4s ease-in-out)
   background-color: var(--color-primary);
 }
 
@@ -119,7 +119,7 @@ section {
   }
   .active-btn {
     background-color: var(--color-secondary);
-    transition: var(--transition-1)
+    transition: var(all 0.4s ease-in-out)
     i {
       color: var(--color-white);
     }
@@ -160,7 +160,7 @@ section {
     align-items: center;
     position: relative;
     .h-shape {
-      transition: var(--transition-1)
+      transition: var(all 0.4s ease-in-out)
       width: 65%;
       height: 100%;
       background-color: var(--color-secondary);
@@ -176,13 +176,13 @@ section {
       width: 68%;
       margin-left: 4rem;
       background-color: var(--color-black);
-      transition: var(--transition-1)
+      transition: var(all 0.4s ease-in-out)
       img {
         width: 100%;
         height: 100%;
 
         object-fit: cover;
-        transition: var(--transition-1)
+        transition: var(all 0.4s ease-in-out)
         filter: grayscale(100%);
         &:hover {
           filter: grayscale(0);
@@ -270,7 +270,7 @@ section {
       top: 50%;
       left: 50%;
       color: var(--color-grey-5);
-      transition: var(--transition-1)
+      transition: var(all 0.4s ease-in-out)
       z-index: -1;
       transform: translate(-50%, -50%);
       font-weight: 800;
