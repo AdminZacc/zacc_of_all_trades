@@ -208,6 +208,20 @@ section {
     }
   }
 }
+
+/*About*/
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+  .right-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid: 2rem;
+  }
+}
+
 /*Independed components*/
 .btn-con {
   display: flex;
