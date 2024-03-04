@@ -222,9 +222,6 @@ section {
 }
 .about-container .right-about .about-item {
   border: 1px solid var(--color-grey-5);
-}
-.about-container .right-about .about-item {
-  border: 1px solid var(--color-grey-5);
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
